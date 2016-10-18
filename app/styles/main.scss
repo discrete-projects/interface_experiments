@@ -1,0 +1,106 @@
+// bower:scss
+// endbower
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  background: #030303;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.hero-unit {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+
+  h1 {
+    letter-spacing: -1px;
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+/* CUSTOM STYLES BEGIN HERE */
+.movie-card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 33.4vw;
+  height: 100vh;
+  margin: 0 0 0 -5px;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+  border: none!important;
+
+  h1 {
+    position: absolute;
+    top: 40px;
+    letter-spacing: -1px;
+    font-size: 40px;
+    line-height: 1.5em;
+  }
+
+  p {
+    position: absolute;
+    top: 200px;
+    text-align: left;
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    max-height: 100vh;
+
+    img {
+      width: 100%;
+      height: 100vh;
+    }
+
+    img.img-blur {
+      width: 200%;
+      height: 200%;
+      filter: blur(10px);
+      -webkit-filter: blur(10px);
+      left: -15px;
+      right: -15px;
+      top: -15px;
+      bottom: -15px;
+    }
+
+    figcaption {
+      margin: 0 80px;
+
+      .subcaption {
+        max-width: 541px;
+        visibility: hidden;
+      }
+      .featured-img {
+        width: 500px;
+        height: 720px;
+        display: inline-block;
+        background: blue;
+        position: absolute;
+        top: 140px;
+        right: 200px;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.object-fit_cover {
+  object-fit: cover;
+}
