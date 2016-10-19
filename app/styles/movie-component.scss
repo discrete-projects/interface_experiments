@@ -1,0 +1,107 @@
+// bower:scss
+// endbower
+
+.movie-card-wrapper {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  display: none;
+  h1 {
+    letter-spacing: -1px;
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+.movie-card-inner{
+  width: 200vw;
+  height: 100vh;
+}
+/* CUSTOM STYLES BEGIN HERE */
+.movie-card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 33.4vw;
+  height: 100vh;
+  margin: 0 0 0 -5px;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+  border: none!important;
+
+  h1 {
+    position: absolute;
+    top: 3.14814814815vh;
+    letter-spacing: 0.1rem;
+    font-size: 30px;
+    line-height: 1.5em;
+    font-family: akkuratbold;
+  }
+
+  p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: akkurat;
+  }
+
+  figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    max-height: 100vh;
+
+    img {
+      width: 100%;
+      height: 100vh;
+    }
+
+    img.img-blur {
+      width: 200%;
+      height: 200%;
+      filter: blur(35px);
+      -webkit-filter: blur(35px);
+      left: -15px;
+      right: -15px;
+      top: -15px;
+      bottom: -15px;
+    }
+
+    figcaption {
+      margin-left: calc(2.770833vw + 5px);
+
+      .subcaption-one, .subcaption-two, .subcaption-three {
+        position: absolute;
+        top: 12.4074074074vh;
+        max-width: 28.1770833333vw;
+        visibility: hidden;
+      }
+
+      .civil-war-subtext {
+        top: 22.592593vh;
+      }
+
+      .featured-img-one, .featured-img-two, .featured-img-three {
+        width: 28.4995808885vw;
+        height: auto;
+        display: inline-block;
+        position: absolute;
+        top: 9.07407407407vh;
+        // right: 7.08333333333vw;
+        left: 62.67vw;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+
+.object-fit_cover {
+  object-fit: cover;
+}
